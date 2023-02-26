@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Registration</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Registration,page">
+	<meta name="description" content="Registration">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/registration.css">
+	<link rel="icon" href="img-vid/logo1.jpg" type="image/icon type"/>
+	<script src="reg.js"></script>
+</head>
+
+<body>
+
+	<nav>
+		<img src="img-vid/logo1.jpg" alt="" width="8%">
+		<ul>
+			<li><a href="home main.html"> Home </a></li>
+			<li><a href="about.html"> About us </a></li>
+			<li><a href="contact us.html"> Contact us </a></li>
+		</ul>
+	</nav>
+
+<div align="center">
+<div id="body">
+<form class="back" onsubmit="return validation()" method="post" name="regist">
+<fieldset class="data" >
+		<legend><h2>Be Part of A&S Teams</h2></legend>
+		<label>First Name: </label>
+		<input type="text" name="firstName" placeholder="Enter First Name" size="30"   />
+		<br><br>
+
+		<label>Last Name: </label>
+		<input type="text" name="lastName" placeholder="Enter Last Name" size="30" />
+		<br><br>
+		<label>User Name: </label>
+		<input type="text" name="userName" placeholder="Enter User Name" size="30"  />
+		<br><br>
+
+		<label>Email: </label>
+		<input type="text" name="email" size="30"  />
+		<br><br>
+
+		<label>Password: </label>
+		<input type="password" name="password" size="30"  />
+		<br><br>
+
+		<label>Age:</label>
+		<input type="text" name="age" size="30" />
+		<br><br>
+
+
+		<label>Mobile:</label>
+		<input type="text" name="mobile" size="30"  />
+		<br><br>
+
+		<label>Join our team as:</label> <br>
+		<input type="radio" name="dept" value="CS"/> Become a Model
+		<input type="radio" name="dept" value="IS"/>Become a Customer
+		<br>
+
+
+</fieldset>
+	<div id="button">
+		<input type="submit" value="Register"/>
+		<input type="reset" value="Clear" onclick="clear2();" />
+		<input type="button" value="Help" />
+		</div>
+
+</form>
+</div>
+</div>
+
+<div id="footer">© A&S copyrites are reserved</div>
+
+</body>
+
+</html>

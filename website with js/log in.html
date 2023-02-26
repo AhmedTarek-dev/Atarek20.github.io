@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login </title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Login,page">
+	<meta name="description" content="Login">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/log in.css">
+	<link rel="icon" href="img-vid/logo1.jpg" type="image/icon type"/>
+	<script>
+	function login(){
+			var firstName = document.loginForm.firstName.value;
+			var password = document.loginForm.password.value;
+			
+			if(firstName == "ahmed" && password == "18101475" ||firstName == "sebastian" && password == "18101886" ){
+				window.location.href = "home shopping.html";
+			}
+			else {
+				alert("wrong login");
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<nav>
+		<img src="img-vid/logo1.jpg" alt="" width="8%">
+		<ul>
+			<li><a href="home main.html"> Home </a></li>
+			<li><a href="about.html"> About us </a></li>
+			<li><a href="contact us.html"> Contact us </a></li>
+		</ul>
+	</nav>
+
+<div align="center" >
+<div id="body">
+	<form id="form" name="loginForm">
+	<fieldset id="data">
+	<legend>Please enter your data</legend>
+	<br>
+	<label>Username:</label>
+		<input type="text" name="firstName" placeholder="Mail/Name of member" size="30" required />
+		<br><br>
+		<label>Password:</label>
+		<input type="password" name="password"  placeholder="Enter pincode" size="30" required />
+		<br>
+
+
+
+	</fieldset>
+	<div class="formout">
+	<a href="registration.html">Not a member yet?</a>
+	<br>
+	<input type="button" value="login" onclick="login();">
+	</div>
+	</form>
+
+
+	</div>
+</div>
+
+<div id="footer">© A&S copyrites are reserved</div>
+</body>
+
+</html>
